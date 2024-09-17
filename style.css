@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    border-bottom: 2px solid black;
+}
+
+
+.navbar .buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .sign-in {
+    padding: 10px 30px;
+    color: grey;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .get-started {
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+}
+
+
+.navbar .sign-in:hover {
+    background-color: #a9a9a9;
+}
+
+.navbar .get-started:hover {
+    opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar.active ul {
+        display: flex;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: black;
+        background: none;
+        border: none;
+    }
+
+    .buttons {
+        display: none;
+    }
+}
+
+
+.menu-toggle {
+    display: none;
+}
