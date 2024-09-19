@@ -50,10 +50,16 @@ body {
 }
 
 .navbar .sign-in {
-    padding: 10px 30px;
-    color: grey;
+    padding-top: 10px;
+    color: black;
     text-decoration: none;
     font-size: 16px;
+    border: none;
+    display: inline-block;
+}
+
+.navbar .sign-in:hover {
+    border-bottom: 2px solid black;
 }
 
 .navbar .get-started {
@@ -66,10 +72,6 @@ body {
     border: none;
 }
 
-
-.navbar .sign-in:hover {
-    background-color: #a9a9a9;
-}
 
 .navbar .get-started:hover {
     opacity: 0.8;
@@ -103,7 +105,62 @@ body {
     }
 }
 
-
 .menu-toggle {
     display: none;
+}
+/* Styling for the product container and images */
+#product-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll button styling */
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.scroll-button.left {
+    left: 10px;
+}
+
+.scroll-button.right {
+    right: 10px;
+}
+.scroll-button:hover {
+    opacity: 0.8;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    #product-container {
+        height: 200px;  /* Adjust container height for mobile */
+    }
+
+    .scroll-button {
+        padding: 8px;
+        font-size: 18px;
+    }
 }
