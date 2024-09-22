@@ -8,28 +8,49 @@
     <script type="module" src="script.js"></script>
 </head>
 <body>
+<header>
+    <div class="container">
+        <div class="subcontainer">
+            <nav class="navbar">
+                 <a href="#" class="nav-branding">VENCE.</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Inspiration ⋁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Courses ⋁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-buttons">
+                        <a href="#" class="sign-in">Sign In</a>
+                        <a href="#" class="get-started">Get Started</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
 
-<nav class="navbar">
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <ul>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Inspiration</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Blog</a></li>
-    </ul>
-    <div class="buttons">
-        <a href="#" class="sign-in">Sign In</a>
-        <a href="#" class="get-started">Get Started</a>
+            </nav>
+        </div>
     </div>
-</nav>
+</header>
 
-<!-- Photo viewer container -->
-<div id="product-container"></div>
+<section id="home">
+    <div class="container"></div>
+    <div class="subcontainer">
+        <div id="product-container"></div>
+        <button class="scroll-button left">←</button>
+        <button class="scroll-button right">→</button>
 
-<!-- Left and Right navigation buttons -->
-<button class="scroll-button left">←</button>
-<button class="scroll-button right">→</button>
-
+    </div>
+</section>
 </body>
 </html>
 

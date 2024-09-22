@@ -1,24 +1,18 @@
 let currentIndex = 0;
 let products = [];
 
-// Toggle the mobile menu visibility
-function toggleMenu() {
-    const navbar = document.querySelector('.navbar');
-    navbar.classList.toggle('active');
-}
+const hamburger = document.querySelector('.hamburger');
+const navmenu = document.querySelector('.nav-menu');
+const navbutton = document.querySelector('.nav-button');
 
-// Handle active menu item on click
-document.querySelectorAll('.navbar ul li a').forEach(item => {
-    item.addEventListener('click', function (event) {
-        event.preventDefault();
-        document.querySelectorAll('.navbar ul li a').forEach(link => {
-            link.classList.remove('active');
-        });
-        this.classList.add('active');
-    });
-});
 
-document.querySelector('.menu-toggle').addEventListener('click', toggleMenu);
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navmenu.classList.toggle('active');
+    navbutton.classList.toggle('active');
+
+})
+
 
 // Fetch products and display the first one
 function fetchProducts() {
