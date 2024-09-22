@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Webpage with Menu</title>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js" defer></script>
 </head>
 <body>
 <header>
@@ -31,6 +31,7 @@
                         <a href="#" class="get-started">Get Started</a>
                     </li>
                 </ul>
+
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -41,16 +42,63 @@
         </div>
     </div>
 </header>
+<div>
 
+</div>
 <section id="home">
     <div class="container"></div>
     <div class="subcontainer">
-        <div id="product-container"></div>
-        <button class="scroll-button left">←</button>
-        <button class="scroll-button right">→</button>
+        <div class="img-container">
+            <div id="product-container"></div>
+            <button class="scroll-button left">←</button>
+            <button class="scroll-button right">→</button>
+        </div>
 
     </div>
 </section>
+<section id="divided-part">
+    <div class="content-container">
+        <div class="left-section">
+            <h2>Choose what you’d like to <br> learn from hundreds of topics:</h2>
+            <ul class="lmenu">
+                <li>Career & Success</li>
+                <li>Personal Development</li>
+                <li>Communication Skills</li>
+                <li>Leadership & Management</li>
+                <li>Relationships</li>
+                <li>Self-Care & Mindfulness</li>
+            </ul>
+            <div class="search">
+                <p>🔍 Search Topic</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="image-text-container" id="imageTextContainer">
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section left">
+            <h2>VENCE.</h2>
+        </div>
+        <div class="footer-section middle">
+            <ul>
+                <li><strong>About Studio</strong></li>
+                <li>Archive</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="footer-section right">
+            <ul class="social-links">
+                <li>Fb</li>
+                <li>TW</li>
+                <li>Ln</li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
 
