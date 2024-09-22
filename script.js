@@ -91,13 +91,13 @@ function fetchPhotos() {
                 description.textContent = "Many years ago, I worked for my parents who own a video production company.";
                 description.classList.add('image-description');
 
-                const line = document.createElement('hr'); // Create a horizontal line
-                line.style.border = 'none'; // Remove default border
-                line.style.borderTop = '1px solid #ccc'; // Add a custom line style
-                line.style.margin = '10px 0'; // Adjust margins as needed
+                const line = document.createElement('hr');
+                line.style.border = 'none';
+                line.style.borderTop = '1px solid #ccc';
+                line.style.margin = '10px 0';
 
 
-                const author = document.createElement('p'); // Add author text
+                const author = document.createElement('p');
                 author.textContent = "By: Peter Rowardson";
                 author.style.color = 'grey';
                 author.style.marginTop = '2px';
