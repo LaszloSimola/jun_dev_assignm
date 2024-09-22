@@ -456,9 +456,8 @@ footer {
 .footer-line {
     border: none;
     border-top: 1px solid white;
-    margin: 20px 0;
-    width: 85%;
     margin: 20px auto;
+    width: 85%;
 }
 
 /* Footer bottom with address and copyright */
