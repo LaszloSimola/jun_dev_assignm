@@ -4,7 +4,7 @@ let products = [];
 const hamburger = document.querySelector('.hamburger');
 const navmenu = document.querySelector('.nav-menu');
 
-
+// Toggle the 'active' class on the hamburger and navigation menu when clicked
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navmenu.classList.toggle('active');
@@ -14,8 +14,8 @@ hamburger.addEventListener('click', () => {
 
 // Fetch products and display the first one
 function fetchProducts() {
-    fetch('https://fakestoreapi.com/products')
-        .then(res => res.json())
+    fetch('https://fakestoreapi.com/products')// Fetch product data from API
+        .then(res => res.json()) // Convert response to JSON
         .then(data => {
             products = data;
             showProduct(currentIndex);  // Show the first product on load
@@ -45,6 +45,7 @@ function addScrollControls() {
     const leftArrow = document.querySelector('.scroll-button.left');
     const rightArrow = document.querySelector('.scroll-button.right');
 
+    //left arrow should move to the previous one
     leftArrow.addEventListener('click', () => {
         if (currentIndex > 0) {
             currentIndex--;
@@ -52,6 +53,7 @@ function addScrollControls() {
         }
     });
 
+    //right arrow should move to the next one
     rightArrow.addEventListener('click', () => {
         if (currentIndex < products.length - 1) {
             currentIndex++;
@@ -66,9 +68,12 @@ document.addEventListener('DOMContentLoaded', () => {
     addScrollControls();
 });
 
+// Fetch photo data and display it when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     fetchPhotos();
 });
+
+// Fetch photos from an API and display them in the image-text section
 function fetchPhotos() {
     fetch('https://api.slingacademy.com/v1/sample-data/photos?offset=5&limit=20')
         .then(response => response.json())
@@ -103,7 +108,7 @@ function fetchPhotos() {
                 author.style.marginTop = '2px';
                 author.style.fontSize = '0.9rem';
 
-
+                // Append the title, description, line, and author to the text container
                 textContainer.appendChild(title);
                 textContainer.appendChild(description);
                 textContainer.appendChild(line);

@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
@@ -21,6 +22,8 @@ body {
     position: absolute;
     justify-content: center;
 }
+
+/* Header section */
 header{
     position: fixed;
     top: 0;
@@ -35,6 +38,8 @@ li{
 a{
     text-decoration: none;
 }
+
+/* Main container for the webpage */
 .container{
     width: 1600px;
     margin: auto;
@@ -45,7 +50,6 @@ a{
 }
 
 /* navigation menu*/
-
 .navbar{
     width: 100%;
     min-height: 70px;
@@ -68,11 +72,12 @@ a{
 
 .nav-link {
     text-decoration: none;
-    color: grey;
+    color: #353535;
     position: relative;
     padding: 0 0 5px;
 }
 
+/* Navigation underline animation */
 .nav-link::after {
     content: "";
     display: block;
@@ -91,10 +96,9 @@ a{
 }
 
 /* sign in and get started button*/
-
 .sign-in{
     text-decoration: none;
-    color: grey;
+    color: #333333;
     position: relative;
     padding: 0 0 5px;
 }
@@ -121,7 +125,7 @@ a{
     text-align: center;
 }
 .get-started {
-    background-color: #DDBEA9;
+    background-color: #dc9b72;
     color: white;
     border-radius: 30px;
 }
@@ -130,7 +134,7 @@ a{
     background-color: #b89d8b;
 }
 
-
+/* Hamburger menu (mobile view) */
 .hamburger{
     display: none;
     cursor: pointer;
@@ -156,7 +160,6 @@ a{
 }
 
 /* Styling for the picture viewer*/
-
 #home {
     margin-top: 10px;
     height: 400px;
@@ -224,8 +227,7 @@ a{
     background-color: darkorange;
 }
 
-/* The styling under the picture viewer for the divided part*/
-
+/* Divided content section (below image viewer) */
 #divided-part{
     width: 100%;
     display: flex;
@@ -247,6 +249,7 @@ a{
     box-sizing: border-box;
 }
 
+/* Right section with images and text */
 .right-section {
     width: 50%;
 }
@@ -276,8 +279,7 @@ a{
 
 
 
-/* The left side menu styling */
-
+/* Left menu styling */
 .lmenu {
     list-style: none;
     padding: 10px;
@@ -310,7 +312,7 @@ a{
 }
 
 
-
+/* Media queries for responsiveness */
 @media(max-width:1600px) {
     .container{
         width: 100%;
@@ -318,7 +320,6 @@ a{
 }
 
 /* The page in mobile view*/
-
 @media(max-width:1024px) {
     .hamburger{
         display: block;
